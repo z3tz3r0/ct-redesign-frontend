@@ -1,34 +1,8 @@
 import { type FC } from "react";
 import { Link } from "react-router";
+import { productCategories } from "../../data/products";
 import { Button } from "../ui/button";
 import { Card, CardContent, CardFooter } from "../ui/card";
-
-const productCategories = [
-  {
-    title: "Internal Mixers",
-    description: "High-performance mixing solutions for polymer processing",
-    image:
-      "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800&h=600",
-  },
-  {
-    title: "Extruders",
-    description: "Single and twin-screw extruders for various applications",
-    image:
-      "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&q=80&w=800&h=600",
-  },
-  {
-    title: "Molding Machines",
-    description: "Precision compression molding for quality production",
-    image:
-      "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=800&h=600",
-  },
-  {
-    title: "Testing Equipment",
-    description: "Comprehensive testing solutions for quality assurance",
-    image:
-      "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&q=80&w=800&h=600",
-  },
-];
 
 const ProductCategory: FC = () => {
   return (
@@ -64,10 +38,7 @@ const ProductCategory: FC = () => {
                 <p className="text-gray-600 text-sm">{category.description}</p>
               </CardContent>
               <CardFooter>
-                <Button
-                  variant="outline"
-                  className="border-accent text-accent bg-primary hover:bg-primary/90 hover:text-white"
-                >
+                <Button className="border-accent bg-primary hover:bg-primary/90 hover:text-white">
                   <Link to="/products">Learn More</Link>
                 </Button>
               </CardFooter>

@@ -1,3 +1,4 @@
+import ScollToTop from "@/components/ScollToTop";
 import { Outlet } from "react-router";
 import Footer from "./Footer";
 import NavBar from "./NavBar";
@@ -10,11 +11,12 @@ const mainNavLinks = [
 ];
 
 // Call to Action (CTA) navigation item
-const ctaNavItem = { to: "/contact", label: "Contact Us" }; // Changed label for clarity as a CTA
+const ctaNavItem = { to: "/contact", label: "Contact Us" };
 
 const Layout = () => {
   return (
     <>
+      <ScollToTop />
       <NavBar mainNavLinks={mainNavLinks} ctaNavItem={ctaNavItem} />
       <main>
         <Outlet />

@@ -49,20 +49,20 @@ const Footer: FC<MenuProps> = ({ mainNavLinks, ctaNavItem }) => {
         <div>
           <h3 className="text-primary text-xl font-bold mb-4">Contact Info</h3>
           <p>
-            189 Moo 1 Theparak Road, Bangsaothong,
+            123 Example Road, Somewhere District,
             <br />
-            Samutprakarn, 10570, Thailand
+            Province, 11111, Thailand
           </p>
           <p>info@chareontut.com</p>
-          <p>Tel: (66) 2315 4155</p>
-          <p>Mob: (66) 86 597 3141</p>
+          <p>Tel: (66) 1234 5678</p>
+          <p>Mob: (66) 1234 5678</p>
         </div>
       </div>
 
       {/* All right reserved */}
       <hr className="border-gray-500/50" />
       <div className="text-center pt-8 text-gray-500/50">
-        <p>© 2024 CHAREON TUT CO., LTD. All rights reserved.</p>
+        <p>© 2025 CHAREON TUT CO., LTD. All rights reserved.</p>
       </div>
     </footer>
   );
