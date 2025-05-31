@@ -1,4 +1,4 @@
-import ScollToTop from "@/components/ScollToTop";
+import ScrollToTop from "@/components/ScrollToTop";
 import { Outlet } from "react-router";
 import Footer from "./Footer";
 import NavBar from "./NavBar";
@@ -16,7 +16,7 @@ const ctaNavItem = { to: "/contact", label: "Contact Us" };
 const Layout = () => {
   return (
     <>
-      <ScollToTop />
+      <ScrollToTop />
       <NavBar mainNavLinks={mainNavLinks} ctaNavItem={ctaNavItem} />
       <main>
         <Outlet />
